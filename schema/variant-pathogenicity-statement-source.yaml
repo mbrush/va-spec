@@ -1,0 +1,21 @@
+$schema: http://json-schema.org/draft/2020-12/schema
+title: Variant-Pathogenicity-Statement-Definition
+type: object
+strict: true
+
+imports:
+  gks.common: gks-common-source.yaml
+  vrs: vrs-source.yaml
+  catvars: catvars-source.yaml
+  core-im: core-im-source.yaml
+
+namespaces:
+  gks.common: gks-common.json#/$defs/
+  catvars: catvars.json#/$defs/
+  vrs: vrs.json#/$defs/
+  core-im: core-im.json#/$defs/
+
+$defs:
+  VariantPathogenicityClassification:
+    inherits: core-im:Statement
+    description: >-
